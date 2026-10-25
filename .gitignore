@@ -1,0 +1,42 @@
+# 依赖与构建产物
+node_modules/
+dist/
+
+# ===== macOS 常见垃圾文件 =====
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+.fseventsd
+.AppleDouble
+.LSOverride
+Icon?
+*.icloud
+
+# ===== Windows / 编辑器 =====
+Thumbs.db
+Desktop.ini
+.idea/
+.vscode/
+*.swp
+
+# ===== 日志 =====
+*.log
+npm-debug.log*
+
+# ====================================================
+# 以下为本项目特有：体积过大或含个人数据，不部署、不上传
+# ====================================================
+
+# 原始地理数据集（体积约 125MB，仅本地用于生成精简边界）
+/area/
+/110100_110100_批量下载/
+/全国省市县边界GEOJson数据(不含乡镇街道)(边界数据未压缩)/
+/全国省市县边界GEOJson数据(不含乡镇街道)(边界数据已压缩)/
+
+# 个人 Geocaching 数据：含 GC 代码、坐标与个人查找历史，不公开
+*.gpx
+
+# 本地导出的统计文件
+beijing-find-map-*.csv
