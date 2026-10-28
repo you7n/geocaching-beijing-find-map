@@ -27,10 +27,7 @@ app.innerHTML = `
     <main class="layout">
       <section class="panel controls">
         <div class="panel-header">
-          <div class="panel-title">
-            <h2>导入 GPX</h2>
-            <button id="help-button" class="help-button" type="button" aria-label="如何获取 GPX 文件">?</button>
-          </div>
+          <h2>导入 GPX</h2>
         </div>
         <label id="dropzone" class="dropzone" for="file-input">
           <input id="file-input" type="file" accept=".gpx,application/gpx+xml,application/xml,text/xml" hidden />
@@ -39,6 +36,7 @@ app.innerHTML = `
         </label>
         <p id="status-text" class="status-text" hidden></p>
         <div class="action-row">
+          <button id="help-button" class="button button-secondary" type="button">在哪里？</button>
           <button id="export-button" class="button button-secondary" disabled>导出 CSV</button>
           <button id="reset-button" class="button button-secondary">重置</button>
         </div>
@@ -273,7 +271,7 @@ function renderDetail(): void {
       <div><dt>状态</dt><dd>${unit.found ? '已访问' : '未访问'}</dd></div>
     </dl>
     <div class="detail-codes">
-      <strong>命中的缓存代码</strong>
+      <strong>命中的 Geocache</strong>
       <div class="detail-codes-box">
         ${
           unit.cacheCodes.length > 0

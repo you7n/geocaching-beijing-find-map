@@ -75,9 +75,15 @@ input {
 
 .action-row {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 10px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
   margin-bottom: 18px;
+}
+
+.action-row .button {
+  padding: 10px 6px;
+  font-size: 0.86rem;
+  white-space: nowrap;
 }
 
 .button,
@@ -140,32 +146,6 @@ input {
   gap: 12px;
   align-items: baseline;
   margin-bottom: 16px;
-}
-
-.panel-title {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.help-button {
-  flex: none;
-  width: 20px;
-  height: 20px;
-  padding: 0;
-  border-radius: 999px;
-  border: 1px solid var(--line);
-  background: transparent;
-  color: var(--muted);
-  font-size: 0.72rem;
-  line-height: 1;
-  cursor: pointer;
-  transition: 180ms ease;
-}
-
-.help-button:hover {
-  border-color: var(--accent-dark);
-  color: var(--accent-dark);
 }
 
 .meta,
